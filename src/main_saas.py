@@ -16,7 +16,11 @@ from datetime import datetime, timedelta
 
 app = Flask(__name__)
 app.secret_key = 'dealerflow-pro-secret-key-2024'
-CORS(app, origins="*", supports_credentials=True)
+CORS(
+    app,
+    origins=["https://www.dynamicdealerservices.com"],
+    supports_credentials=True
+)
 
 # In-memory storage for demo (in production, use a real database)
 users = {}

@@ -11,7 +11,7 @@ import json
 import time
 
 app = Flask(__name__)
-CORS(app, origins="*")
+CORS(app, origins=["https://www.dynamicdealerservices.com"])
 
 # Simple in-memory storage for demo
 dealership_data = {}
