@@ -25,7 +25,11 @@ app = Flask(__name__)
 app.secret_key = os.getenv('FLASK_SECRET_KEY', 'dealerflow-pro-secret-key-2024')
 
 # Enable CORS for all origins
-CORS(app, origins="*", supports_credentials=True)
+CORS(
+    app,
+    origins=["https://www.dynamicdealerservices.com"],
+    supports_credentials=True
+)
 
 # Register blueprints
 app.register_blueprint(auth_bp, url_prefix='/api/auth')
