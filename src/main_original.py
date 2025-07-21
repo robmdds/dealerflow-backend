@@ -24,7 +24,7 @@ app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), 'sta
 app.config['SECRET_KEY'] = 'dealerflow-pro-secret-key-2024'
 
 # Enable CORS for all routes
-CORS(app, origins=["https://www.dynamicdealerservices.com"])
+CORS(app, origins=["https://postflowpro.com"])
 
 # Register blueprints
 app.register_blueprint(user_bp, url_prefix='/api/users')

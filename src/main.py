@@ -18,7 +18,7 @@ app = Flask(__name__)
 app.secret_key = 'dealerflow-pro-secret-key-2024'
 CORS(
     app,
-    origins=["https://www.dynamicdealerservices.com"],
+    origins=["https://postflowpro.com",],
     supports_credentials=True
 )
 
