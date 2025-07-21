@@ -27,7 +27,11 @@ app.secret_key = os.getenv('FLASK_SECRET_KEY', 'dealerflow-pro-secret-key-2024')
 # Enable CORS for all origins
 CORS(
     app,
-    origins=["https://www.dynamicdealerservices.com"],
+    origins=[
+        "https://dynamicdealerservices.com",
+        "https://www.dynamicdealerservices.com",
+        "https://dealerflow-frontend-btiw-7lkyu2xpv-robs-projects-ec1694cd.vercel.app"
+    ],
     supports_credentials=True
 )
 
